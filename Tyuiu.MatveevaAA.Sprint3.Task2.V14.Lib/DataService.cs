@@ -9,15 +9,16 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task2.V14.Lib
         {
             double p = 1.0;
             int k = startValue;
+            double x = value;
 
             do
             {
-                p *= Math.Pow(value/ k, 3.0);   // важно: x — double, деление вещественное
+                p *= Math.Pow(x/ k, 3.0);   // важно: x — double, деление вещественное
                 k++;
             }
             while (k <= stopValue);
 
-            return Math.Round(p, 6);         // → 0.000098
+            return Math.Round(p, 3);         // → 0.000098
 
         }
     }
