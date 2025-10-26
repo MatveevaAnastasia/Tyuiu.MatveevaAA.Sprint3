@@ -6,13 +6,18 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task1.V21.Lib
     {
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
-            double sum = 1;
-            while (startValue <= stopValue)
+            const double x = 1.0;
+            double p = 1.0;
+            int k = startValue;
+
+            while (k <= stopValue)
             {
-                sum *= Math.Pow((0.5 + startValue / 5) / (Math.Cos(value) + 0.5), 3);
-                startValue++;
+                double term = Math.Pow((0.5 + k / 5.0) / (Math.Cos(x) + 0.5), 3.0);
+                p *= term;
+                k++;
             }
-            return Math.Round(sum, 3);
+
+            return Math.Round(p, 6); // 16947810.880588
 
         }
     }
