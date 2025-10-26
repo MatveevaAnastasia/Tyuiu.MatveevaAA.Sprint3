@@ -17,7 +17,7 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task1.V21.Lib
                 k++;
             }
 
-            return Math.Round(p, 6); // 16947810.880588
+            return Math.Round(p, 2); // 16947810.880588
 
         }
     }
