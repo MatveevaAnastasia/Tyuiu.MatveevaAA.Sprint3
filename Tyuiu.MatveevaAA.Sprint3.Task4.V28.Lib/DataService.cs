@@ -8,9 +8,9 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task4.V28.Lib
         public double Calculate(int startValue, int stopValue)
         {
             double y = 0;
-            for (double i = startValue; i < stopValue; i++)
+            for (int i = startValue; i <= stopValue; i++)
             {
-                if (i == 0) { break; }
+                if (i == 0) { continue; }
                 y += (Math.Cos(i) + Math.Sin(i)) / i;
             }
              return Math.Round(y,3);
