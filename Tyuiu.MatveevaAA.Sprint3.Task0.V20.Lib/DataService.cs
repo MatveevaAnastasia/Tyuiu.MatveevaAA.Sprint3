@@ -8,9 +8,9 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task0.V20.Lib
         public double GetMultiplySeries(int value, int startValue, int stopValue)
         {
             double s = 1;
-            for (int i =startValue; i <= stopValue; i++)
+            for (double i =startValue; i <= stopValue; i++)
             {
-                s *= Math.Pow(i / 8, 3) + Math.Cos(value);
+                s *= (Math.Pow(i / 8, 3) + Math.Cos(value));
             }
             return Math.Round(s, 3);
         }
