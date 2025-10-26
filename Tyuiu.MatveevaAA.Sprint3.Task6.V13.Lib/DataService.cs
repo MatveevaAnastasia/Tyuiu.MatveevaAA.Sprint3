@@ -9,9 +9,9 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task6.V13.Lib
             int n = 0;
             for (int i = startValue; i <= stopValue; i++)
             {
-                for (int j = 1; j > 7; j++)
+                for (int j = 9; j < 18; j++)
                     if (i % j == 0)
-                        n++;
+                        n+=j;
             }
             return n;
         }
