@@ -11,7 +11,7 @@ namespace Tyuiu.MatveevaAA.Sprint3.Task7.V18.Lib
             for (int i = startValue; i <= stopValue; i++)
             {
 
-                result[count] = Math.Round((2 * i - 3) / (Math.Cos(i) + i) + 5);
+                result[count] = Math.Round((2 * i - 3) / (Math.Cos(i) + i) + 5,2);
             count++;
             }
 
